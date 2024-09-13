@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Nike Jordan</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="header__logo"> <a href="home.html"> 
+                <h1>UpConstruction</h1><span>.</span></a></div>
+          </div>
+          <div class="col-6 set" style="flex-direction: column; display: flex; justify-content: space-evenly;">
+            <div class="header__menu"> 
+              <ul> 
+                <li> <a href="home.html">HOME</a></li>
+                <li> <a href="about.html">ABOUT </a></li>
+                <li> <a href="services.html">SERVICES</a></li>
+                <li> <a href="projects.html">PROJECTS</a></li>
+                <li> <a class="active" href="blog.html">BLOG</a></li>
+                <li> <a href="#">DROPDOWN</a></li>
+                <li> <a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="header__btn"> 
+              <div class="bars"><i class="fa-solid fa-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i></div>
+              <div class="offcanvas offcanvas-end" id="offcanvasRight" tabindex="-1" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel"> </h5><i class="fa-solid fa-xmark" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                </div>
+                <div class="offcanvas-body">
+                  <ul> 
+                    <li> <a href="home.html">HOME</a></li>
+                    <li> <a href="about.html">ABOUT </a></li>
+                    <li> <a href="services.html">SERVICES</a></li>
+                    <li> <a href="projects.html">PROJECTS</a></li>
+                    <li> <a class="active" href="blog.html">BLOG</a></li>
+                    <li> <a href="#">DROPDOWN</a></li>
+                    <li> <a href="contact.html">CONTACT</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="home d-flex align-items-center" style="background-image: url('../img/home-bg.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+        <h2>Blog</h2>
+        <ol>
+          <li><a href="home.html">Home</a></li>
+          <li>Blog</li>
+        </ol>
+      </div>
+    </section>
+    <section class="recent-blog-posts">
+      <div class="container" data-aos="fade-up">
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab" tabindex="0"> 
+            <div class="row gy-5">
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-1.jpg" alt=""><span class="post-date">December 12</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Julia Parker</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Politics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-2.jpg" alt=""><span class="post-date">July 17</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Mario Douglas</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Sports</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-3.jpg" alt=""><span class="post-date">September 05</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Lisa Hunter</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Economics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gy-5" style="margin-top: -20px;">
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-4.jpg" alt=""><span class="post-date">December 12</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Julia Parker</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Politics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-5.jpg" alt=""><span class="post-date">July 17</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Mario Douglas</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Sports</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-6.jpg" alt=""><span class="post-date">September 05</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Lisa Hunter</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Economics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
+            <div class="row gy-5">
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-6.jpg" alt=""><span class="post-date">December 12</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Julia Parker</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Politics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-5.jpg" alt=""><span class="post-date">July 17</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Mario Douglas</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Sports</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-2.jpg" alt=""><span class="post-date">September 05</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Lisa Hunter</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Economics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gy-5" style="margin-top: -20px;">
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-1.jpg" alt=""><span class="post-date">December 12</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Julia Parker</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Politics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-4.jpg" alt=""><span class="post-date">July 17</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Mario Douglas</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Sports</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-3.jpg" alt=""><span class="post-date">September 05</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Lisa Hunter</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Economics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab" tabindex="0">
+            <div class="row gy-5">
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-5.jpg" alt=""><span class="post-date">December 12</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Julia Parker</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Politics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-1.jpg" alt=""><span class="post-date">July 17</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Mario Douglas</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Sports</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-2.jpg" alt=""><span class="post-date">September 05</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Lisa Hunter</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Economics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row gy-5" style="margin-top: -20px;">
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-4.jpg" alt=""><span class="post-date">December 12</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Julia Parker</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Politics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="post-item position-relative h-100">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-6.jpg" alt=""><span class="post-date">July 17</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Mario Douglas</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Sports</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+                  <div class="post-img position-relative overflow-hidden"><img class="img-fluid" src="../img/blog-3.jpg" alt=""><span class="post-date">September 05</span></div>
+                  <div class="post-content d-flex flex-column">
+                    <h3 class="post-title">Quia assumenda est et veritati tirana ploder</h3>
+                    <div class="meta d-flex align-items-center">
+                      <div class="d-flex align-items-center"><i class="bi bi-person"></i><span class="ps-2">Lisa Hunter</span></div><span class="px-3 text-black-50">/</span>
+                      <div class="d-flex align-items-center"><i class="bi bi-folder2"></i><span class="ps-2">Economics</span></div>
+                    </div>
+                    <hr><a class="readmore stretched-link" href="blog-details.html"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">1</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">2</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3" aria-selected="false">3</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-info">
+                <h3>UpConstruction</h3>
+                <p>A108 Adam Street <br>                NY 535022, USA<br><br><strong>Phone:</strong> +1 5589 55488 55<br><strong>Email:</strong> info@example.com<br></p>
+                <div class="social-links d-flex mt-3"><a class="d-flex align-items-center justify-content-center" href="https://twitter.com/" target="blank"><i class="bi bi-twitter"></i></a><a class="d-flex align-items-center justify-content-center" href="https://facebook.com/" target="blank"><i class="bi bi-facebook"></i></a><a class="d-flex align-items-center justify-content-center" href="https://instagram.com/" target="blank"><i class="bi bi-instagram"></i></a><a class="d-flex align-items-center justify-content-center" href="https://linkedin.com/" target="blank"><i class="bi bi-linkedin"></i></a></div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Hic solutasetp</h4>
+              <ul>
+                <li><a href="#">Molestiae accusamus iure</a></li>
+                <li><a href="#">Excepturi dignissimos</a></li>
+                <li><a href="#">Suscipit distinctio</a></li>
+                <li><a href="#">Dilecta</a></li>
+                <li><a href="#">Sit quas consectetur</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Nobis illum</h4>
+              <ul>
+                <li><a href="#">Ipsam</a></li>
+                <li><a href="#">Laudantium dolorum</a></li>
+                <li><a href="#">Dinera</a></li>
+                <li><a href="#">Trodelas</a></li>
+                <li><a href="#">Flexo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-legal text-center position-relative">
+        <div class="container">
+          <div class="copyright">&copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved</div>
+          <div class="credits">Designed by <a href="https://t.me/Amalbek009">Amalbek</a></div>
+        </div>
+      </div>
+    </footer><a class="back-to-top" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="../js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      new PureCounter({
+          selector: ".purecounter",
+      });
+      
+      AOS.init();
+      var telegram_bot_id = "6213010812:AAF7nknlBoP3HIr5ddTphXmzySeYQAleW2o"; // token'ni o'rniga Siz yaratgan Bot tokenini yozing
+      //chat id
+      var chat_id = 1669981432; // 1111'ni o'rniga habar borishi kerak bo'lgan joyni ID'sini yozing (Batafsil videoda)
+      var u_name, email, message;
+      var ready = function() {
+          u_name = document.getElementById("name").value;
+          email = document.getElementById("email").value;
+          tel = document.getElementById("phone").value;
+          message = document.getElementById("message").value;
+          message = "Name:  " + u_name + "\nEmail:  " + email + "\nTel:  " + tel + "\nMessage:  " + message;
+      };
+      var sendtelegram = function() {
+          ready();
+          var settings = {
+              "async": true,
+              "crossDomain": true,
+              "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+              "method": "POST",
+              "headers": {
+                  "Content-Type": "application/json",
+                  "cache-control": "no-cache"
+              },
+              "data": JSON.stringify({
+                  "chat_id": chat_id,
+                  "text": message
+              })
+          };
+          $.ajax(settings).done(function(response) {
+              console.log(response);
+          });
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("phone").value = "";
+          document.getElementById("message").value = "";
+          return false;
+      };
+      new Swiper('.slides-1', {
+          speed: 600,
+          loop: true,
+          autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+          },
+          slidesPerView: 'auto',
+          pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+          },
+          navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          }
+      });
+      new Swiper('.slides-2', {
+          speed: 600,
+          loop: true,
+          autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+          },
+          slidesPerView: 'auto',
+          pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+          },
+          navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+          320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+          },
+      
+          1200: {
+              slidesPerView: 2,
+              spaceBetween: 20
+          }
+          }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,457 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" rel="stylesheet")
+        link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous")
+        link(rel="stylesheet" href="../css/home.css")
+        title Nike Jordan
+    body
+        header.header
+            .container
+                .row
+                    .col-6
+                        .header__logo 
+                            a(href="home.html") 
+                                h1 UpConstruction
+                                span .
+                    .col-6.set(style="flex-direction: column; display: flex; justify-content: space-evenly;")
+                        .header__menu 
+                            ul 
+                                li 
+                                    a(href="home.html") HOME
+                                li 
+                                    a(href="about.html") ABOUT 
+                                li 
+                                    a(href="services.html" class="active") SERVICES
+                                li 
+                                    a(href="projects.html") PROJECTS
+                                li 
+                                    a(href="blog.html") BLOG
+                                li 
+                                    a(href="#") DROPDOWN
+                                li 
+                                    a(href="contact.html") CONTACT
+                        .header__btn 
+                            .bars
+                                i.fa-solid.fa-bars(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasRight' aria-controls='offcanvasRight')
+                            #offcanvasRight.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasRightLabel')
+                                .offcanvas-header
+                                    h5#offcanvasRightLabel.offcanvas-title 
+                                    i.fa-solid.fa-xmark(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+                                .offcanvas-body
+                                    ul 
+                                        li 
+                                            a(href="home.html") HOME
+                                        li 
+                                            a(href="about.html" class="active") ABOUT 
+                                        li 
+                                            a(href="services.html") SERVICES
+                                        li 
+                                            a(href="projects.html") PROJECTS
+                                        li 
+                                            a(href="blog.html") BLOG
+                                        li 
+                                            a(href="#") DROPDOWN
+                                        li 
+                                            a(href="contact.html") CONTACT
+        section.home.d-flex.align-items-center(style="background-image: url('../img/home-bg.jpg');")
+            .container.position-relative.d-flex.flex-column.align-items-center(data-aos='fade')
+                h2 Services
+                ol
+                    li
+                        a(href='home.html') Home
+                    li Services
+        section.services.section-bg(style="margin-top: -0px;")
+            .container(data-aos='fade-up')
+                .row.gy-4
+                    .col-lg-4.col-md-6(data-aos='fade-up' data-aos-delay='100')
+                        .service-item.position-relative
+                            .icon
+                                i.fa-solid.fa-mountain-city
+                            h3 Nesciunt Mete
+                            p
+                                | Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.
+                            a.readmore.stretched-link(href='service-details.html')
+                                | Learn more 
+                                i.bi.bi-arrow-right
+                    .col-lg-4.col-md-6(data-aos='fade-up' data-aos-delay='200')
+                        .service-item.position-relative
+                            .icon
+                                i.fa-solid.fa-arrow-up-from-ground-water
+                            h3 Eosle Commodi
+                            p
+                                | Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
+                            a.readmore.stretched-link(href='service-details.html')
+                                | Learn more 
+                                i.bi.bi-arrow-right
+                    .col-lg-4.col-md-6(data-aos='fade-up' data-aos-delay='300')
+                        .service-item.position-relative
+                            .icon
+                                i.fa-solid.fa-compass-drafting
+                            h3 Ledo Markt
+                            p
+                                | Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
+                            a.readmore.stretched-link(href='service-details.html')
+                                | Learn more 
+                                i.bi.bi-arrow-right
+                    .col-lg-4.col-md-6(data-aos='fade-up' data-aos-delay='400')
+                        .service-item.position-relative
+                            .icon
+                                i.fa-solid.fa-trowel-bricks
+                            h3 Asperiores Commodit
+                            p
+                                | Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.
+                            a.readmore.stretched-link(href='service-details.html')
+                                | Learn more 
+                                i.bi.bi-arrow-right
+                    .col-lg-4.col-md-6(data-aos='fade-up' data-aos-delay='500')
+                        .service-item.position-relative
+                            .icon
+                                i.fa-solid.fa-helmet-safety
+                            h3 Velit Doloremque
+                            p
+                                | Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.
+                            a.readmore.stretched-link(href='service-details.html')
+                                | Learn more 
+                                i.bi.bi-arrow-right
+                    .col-lg-4.col-md-6(data-aos='fade-up' data-aos-delay='600')
+                        .service-item.position-relative
+                            .icon
+                                i.fa-solid.fa-arrow-up-from-ground-water
+                            h3 Dolori Architecto
+                            p
+                                | Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.
+                            a.readmore.stretched-link(href='service-details.html')
+                                | Learn more 
+                                i.bi.bi-arrow-right
+        section.services-cards
+            .container(data-aos='fade-up')
+                .row.gy-4
+                    .col-lg-3.col-md-6(data-aos='zoom-in' data-aos-delay='100')
+                        h3 Quasi eaque omnis
+                        p
+                        | Eius non minus autem soluta ut ui labore omnis quisquam corrupti autem odit voluptas quos commodi magnam occaecati.
+                        ul.list-unstyled
+                            li
+                                i.bi.bi-check2
+                                span Ullamco laboris nisi ut aliquip
+                            li
+                                i.bi.bi-check2
+                                span Duis aute irure dolor in reprehenderit
+                            li
+                                i.bi.bi-check2
+                                span Ullamco laboris nisi ut aliquip ex ea
+                    .col-lg-3.col-md-6(data-aos='zoom-in' data-aos-delay='200')
+                        h3 Et nemo dolores consectetur
+                        p
+                        | Ducimus ea quam et occaecati est. Temporibus in soluta labore voluptates aut. Et sit soluta non repellat sed quia dire plovers tradoria
+                        ul.list-unstyled
+                            li
+                                i.bi.bi-check2
+                                span Enim temporibus maiores eligendi
+                            li
+                                i.bi.bi-check2
+                                span Ut maxime ut quibusdam quam qui
+                            li
+                                i.bi.bi-check2
+                                span Officiis aspernatur in officiis
+                    .col-lg-3.col-md-6(data-aos='zoom-in' data-aos-delay='300')
+                        h3 Staque laboriosam modi
+                        p
+                        | Velit eos error et dolor omnis voluptates nobis tenetur sed enim nihil vero qui suscipit ipsum at magni. Ipsa architecto consequatur aliquam
+                        ul.list-unstyled
+                            li
+                                i.bi.bi-check2
+                                span Quis voluptates laboriosam numquam
+                            li
+                                i.bi.bi-check2
+                                span Treva libero sunt quis veniam ut
+                            li
+                                i.bi.bi-check2
+                                span Debitis eos est est corrupti
+                    .col-lg-3.col-md-6(data-aos='zoom-in' data-aos-delay='400')
+                        h3 Dignissimos suscipit iste
+                        p
+                        | Molestiae occaecati assumenda quia saepe nobis recusandae at dicta ducimus sequi numquam commodi est in consequatur ea magnam quia itaque
+                        ul.list-unstyled
+                            li
+                                i.bi.bi-check2
+                                span Veritatis qui reprehenderit quis
+                            li
+                                i.bi.bi-check2
+                                span Accusantium vel numquam sunt minus
+                            li
+                                i.bi.bi-check2
+                                span Voluptatem pariatur est sationem
+        section.servicabout.section-bg
+            .container(data-aos='fade-up')
+                .row.justify-content-around.gy-4
+                    .col-lg-5.d-flex.flex-column.justify-content-center
+                        h3 Enim quis est voluptatibus aliquid consequatur fugiat
+                        p
+                            | Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='100')
+                            i.bi.bi-easel.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Lorem Ipsum
+                                p
+                                    | Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='200')
+                            i.bi.bi-patch-check.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Nemo Enim
+                                p
+                                    | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='300')
+                            i.bi.bi-brightness-high.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Dine Pad
+                                p
+                                    | Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='400')
+                            i.bi.bi-brightness-high.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Tride clov
+                                p
+                                    | Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet. Et eligendi
+                    .col-lg-6.img-bg(style='background-image: url(../img/alt-services-2.jpg);' data-aos='zoom-in' data-aos-delay='100')
+        section.servicabout
+            .container(data-aos='fade-up')
+                .row.justify-content-around.gy-4
+                    .col-lg-6.img-bg(style='background-image: url(../img/alt-services.jpg);' data-aos='zoom-in' data-aos-delay='100')
+                    .col-lg-5.d-flex.flex-column.justify-content-center
+                        h3 Enim quis est voluptatibus aliquid consequatur fugiat
+                        p
+                            | Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='100')
+                            i.bi.bi-easel.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Lorem Ipsum
+                                p
+                                    | Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='200')
+                            i.bi.bi-patch-check.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Nemo Enim
+                                p
+                                    | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='300')
+                            i.bi.bi-brightness-high.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Dine Pad
+                                p
+                                    | Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='400')
+                            i.bi.bi-brightness-high.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Tride clov
+                                p
+                                    | Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet. Et eligendi
+        footer.footer
+            .footer-content.position-relative
+                .container
+                    .row
+                        .col-lg-4.col-md-6
+                            .footer-info
+                                h3 UpConstruction
+                                p
+                                    | A108 Adam Street 
+                                    br
+                                    |                 NY 535022, USA
+                                    br
+                                    br
+                                    strong Phone:
+                                    |  +1 5589 55488 55
+                                    br
+                                    strong Email:
+                                    |  info@example.com
+                                    br
+                                .social-links.d-flex.mt-3
+                                    a.d-flex.align-items-center.justify-content-center(href='https://twitter.com/' target="blank")
+                                        i.bi.bi-twitter
+                                    a.d-flex.align-items-center.justify-content-center(href='https://facebook.com/' target="blank")
+                                        i.bi.bi-facebook
+                                    a.d-flex.align-items-center.justify-content-center(href='https://instagram.com/' target="blank")
+                                        i.bi.bi-instagram
+                                    a.d-flex.align-items-center.justify-content-center(href='https://linkedin.com/' target="blank")
+                                        i.bi.bi-linkedin
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Useful Links
+                            ul
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='about.html') About us
+                                li
+                                    a(href='services.html') Services
+                                li
+                                    a(href='#') Terms of service
+                                li
+                                    a(href='#') Privacy policy
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Our Services
+                            ul
+                                li
+                                    a(href='#') Web Design
+                                li
+                                    a(href='#') Web Development
+                                li
+                                    a(href='#') Product Management
+                                li
+                                    a(href='#') Marketing
+                                li
+                                    a(href='#') Graphic Design
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Hic solutasetp
+                            ul
+                                li
+                                    a(href='#') Molestiae accusamus iure
+                                li
+                                    a(href='#') Excepturi dignissimos
+                                li
+                                    a(href='#') Suscipit distinctio
+                                li
+                                    a(href='#') Dilecta
+                                li
+                                    a(href='#') Sit quas consectetur
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Nobis illum
+                            ul
+                                li
+                                    a(href='#') Ipsam
+                                li
+                                    a(href='#') Laudantium dolorum
+                                li
+                                    a(href='#') Dinera
+                                li
+                                    a(href='#') Trodelas
+                                li
+                                    a(href='#') Flexo
+            .footer-legal.text-center.position-relative
+                .container
+                    .copyright
+                        | &copy; Copyright 
+                        strong
+                            span UpConstruction
+                        | . All Rights Reserved
+                    .credits
+                        | Designed by 
+                        a(href='https://t.me/Amalbek009') Amalbek
+
+
+
+        a(href="#" class="back-to-top")
+            i.fa-solid.fa-arrow-up
+        script(src="../js/home.js")
+        script(src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous")
+        script(src="https://code.jquery.com/jquery-1.11.0.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js")
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        script.
+            new PureCounter({
+                selector: ".purecounter",
+            });
+
+            AOS.init();
+            var telegram_bot_id = "6213010812:AAF7nknlBoP3HIr5ddTphXmzySeYQAleW2o"; // token'ni o'rniga Siz yaratgan Bot tokenini yozing
+            //chat id
+            var chat_id = 1669981432; // 1111'ni o'rniga habar borishi kerak bo'lgan joyni ID'sini yozing (Batafsil videoda)
+            var u_name, email, message;
+            var ready = function() {
+                u_name = document.getElementById("name").value;
+                email = document.getElementById("email").value;
+                tel = document.getElementById("phone").value;
+                message = document.getElementById("message").value;
+                message = "Name:  " + u_name + "\nEmail:  " + email + "\nTel:  " + tel + "\nMessage:  " + message;
+            };
+            var sendtelegram = function() {
+                ready();
+                var settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+                    "method": "POST",
+                    "headers": {
+                        "Content-Type": "application/json",
+                        "cache-control": "no-cache"
+                    },
+                    "data": JSON.stringify({
+                        "chat_id": chat_id,
+                        "text": message
+                    })
+                };
+                $.ajax(settings).done(function(response) {
+                    console.log(response);
+                });
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("message").value = "";
+                return false;
+            };
+            new Swiper('.slides-1', {
+                speed: 600,
+                loop: true,
+                autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+                },
+                slidesPerView: 'auto',
+                pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+                },
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                }
+            });
+            new Swiper('.slides-2', {
+                speed: 600,
+                loop: true,
+                autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+                },
+                slidesPerView: 'auto',
+                pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+                },
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+                }
+            });

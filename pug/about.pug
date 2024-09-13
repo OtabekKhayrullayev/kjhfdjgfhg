@@ -1,0 +1,586 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" rel="stylesheet")
+        link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous")
+        link(rel="stylesheet" href="../css/home.css")
+        title Nike Jordan
+    body
+        header.header
+            .container
+                .row
+                    .col-6
+                        .header__logo 
+                            a(href="home.html") 
+                                h1 UpConstruction
+                                span .
+                    .col-6.set(style="flex-direction: column; display: flex; justify-content: space-evenly;")
+                        .header__menu 
+                            ul 
+                                li 
+                                    a(href="home.html") HOME
+                                li 
+                                    a(href="about.html" class="active") ABOUT 
+                                li 
+                                    a(href="services.html") SERVICES
+                                li 
+                                    a(href="projects.html") PROJECTS
+                                li 
+                                    a(href="blog.html") BLOG
+                                li 
+                                    a(href="#") DROPDOWN
+                                li 
+                                    a(href="contact.html") CONTACT
+                        .header__btn 
+                            .bars
+                                i.fa-solid.fa-bars(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasRight' aria-controls='offcanvasRight')
+                            #offcanvasRight.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasRightLabel')
+                                .offcanvas-header
+                                    h5#offcanvasRightLabel.offcanvas-title 
+                                    i.fa-solid.fa-xmark(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+                                .offcanvas-body
+                                    ul 
+                                        li 
+                                            a(href="home.html") HOME
+                                        li 
+                                            a(href="about.html" class="active") ABOUT 
+                                        li 
+                                            a(href="services.html") SERVICES
+                                        li 
+                                            a(href="projects.html") PROJECTS
+                                        li 
+                                            a(href="blog.html") BLOG
+                                        li 
+                                            a(href="#") DROPDOWN
+                                        li 
+                                            a(href="contact.html") CONTACT
+        section.home.d-flex.align-items-center(style="background-image: url('../img/home-bg.jpg');")
+            .container.position-relative.d-flex.flex-column.align-items-center(data-aos='fade')
+                h2 About
+                ol
+                    li
+                        a(href='home.html') Home
+                    li About
+        section.about
+            .container(data-aos='fade-up')
+                .row.position-relative
+                    .col-lg-7.about-img(style='background-image: url(../img/about.jpg);')
+                    .col-lg-7
+                        h2 Consequatur eius et magnam
+                        .our-story
+                            h4 Est 1988
+                            h3 Our Story
+                            p
+                                | Inventore aliquam beatae at et id alias. Ipsa dolores amet consequuntur minima quia maxime autem. Quidem id sed ratione. Tenetur provident autem in reiciendis rerum at dolor. Aliquam consectetur laudantium temporibus dicta minus dolor.
+                            ul
+                                li
+                                    i.bi.bi-check-circle
+                                    span Ullamco laboris nisi ut aliquip ex ea commo
+                                li
+                                    i.bi.bi-check-circle
+                                    span Duis aute irure dolor in reprehenderit in
+                                li
+                                    i.bi.bi-check-circle
+                                    span Ullamco laboris nisi ut aliquip ex ea
+                            p
+                                | Vitae autem velit excepturi fugit. Animi ad non. Eligendi et non nesciunt suscipit repellendus porro in quo eveniet. Molestias in maxime doloremque.
+                            .watch-video.d-flex.align-items-center.position-relative
+                                i.bi.bi-play-circle
+                                a.glightbox.stretched-link(href='https://youtu.be/mBwbfrjj8uI?si=sDySThO-4ZpNnjlu' target="blank") Watch Video
+        section.stats-counter.section-bg
+            .container
+                .row.gy-4
+                    .col-lg-3.col-md-6
+                        .stats-item.d-flex.align-items-center.w-100.h-100
+                            i.bi.bi-emoji-smile.color-blue.flex-shrink-0
+                            div
+                                span.purecounter(data-purecounter-start='0' data-purecounter-end='232' data-purecounter-duration='1')
+                                p Happy Clients
+                    .col-lg-3.col-md-6
+                        .stats-item.d-flex.align-items-center.w-100.h-100
+                            i.bi.bi-journal-richtext.color-orange.flex-shrink-0
+                            div
+                                span.purecounter(data-purecounter-start='0' data-purecounter-end='521' data-purecounter-duration='1')
+                                p Projects
+                    .col-lg-3.col-md-6
+                        .stats-item.d-flex.align-items-center.w-100.h-100
+                            i.bi.bi-headset.color-green.flex-shrink-0
+                            div
+                                span.purecounter(data-purecounter-start='0' data-purecounter-end='1463' data-purecounter-duration='1')
+                                p Hours Of Support
+                    .col-lg-3.col-md-6
+                        .stats-item.d-flex.align-items-center.w-100.h-100
+                            i.bi.bi-people.color-pink.flex-shrink-0
+                            div
+                                span.purecounter(data-purecounter-start='0' data-purecounter-end='15' data-purecounter-duration='1')
+                                p Hard Workers
+        section.servicabout
+            .container(data-aos='fade-up')
+                .row.justify-content-around.gy-4
+                    .col-lg-6.img-bg(style='background-image: url(../img/alt-services.jpg);' data-aos='zoom-in' data-aos-delay='100')
+                    .col-lg-5.d-flex.flex-column.justify-content-center
+                        h3 Enim quis est voluptatibus aliquid consequatur fugiat
+                        p
+                            | Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='100')
+                            i.bi.bi-easel.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Lorem Ipsum
+                                p
+                                    | Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='200')
+                            i.bi.bi-patch-check.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Nemo Enim
+                                p
+                                    | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='300')
+                            i.bi.bi-brightness-high.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Dine Pad
+                                p
+                                    | Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='400')
+                            i.bi.bi-brightness-high.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Tride clov
+                                p
+                                    | Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet. Et eligendi
+        section.servicabout
+            .container(data-aos='fade-up')
+                .row.justify-content-around.gy-4
+                    .col-lg-5.d-flex.flex-column.justify-content-center
+                        h3 Enim quis est voluptatibus aliquid consequatur fugiat
+                        p
+                            | Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='100')
+                            i.bi.bi-easel.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Lorem Ipsum
+                                p
+                                    | Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='200')
+                            i.bi.bi-patch-check.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Nemo Enim
+                                p
+                                    | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='300')
+                            i.bi.bi-brightness-high.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Dine Pad
+                                p
+                                    | Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis
+                        .icon-box.d-flex.position-relative(data-aos='fade-up' data-aos-delay='400')
+                            i.bi.bi-brightness-high.flex-shrink-0
+                            div
+                                h4
+                                    a.stretched-link(href='#') Tride clov
+                                p
+                                    | Est voluptatem labore deleniti quis a delectus et. Saepe dolorem libero sit non aspernatur odit amet. Et eligendi
+                    .col-lg-6.img-bg(style='background-image: url(../img/alt-services-2.jpg);' data-aos='zoom-in' data-aos-delay='100')
+        section.team
+            .container(data-aos='fade-up')
+                .section-header
+                    h2 Our Team
+                    p
+                        | Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop
+                .row.gy-5
+                    .col-lg-4.col-md-6.member(data-aos='fade-up' data-aos-delay='100')
+                        .member-img
+                            img.img-fluid(src='../img/team-1.jpg' alt='')
+                            .social
+                                a(href='https://twitter.com/' target="blank")
+                                    i.bi.bi-twitter
+                                a(href='https://facebook.com/' target="blank")
+                                    i.bi.bi-facebook
+                                a(href='https://instagram.com/' target="blank")
+                                    i.bi.bi-instagram
+                                a(href='https://linkedin.com/' target="blank")
+                                    i.bi.bi-linkedin
+                        .member-info.text-center
+                            h4 Walter White
+                            span Chief Executive Officer
+                            p
+                                | Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow
+                    .col-lg-4.col-md-6.member(data-aos='fade-up' data-aos-delay='200')
+                        .member-img
+                            img.img-fluid(src='../img/team-2.jpg' alt='')
+                            .social
+                                a(href='https://twitter.com/' target="blank")
+                                    i.bi.bi-twitter
+                                a(href='https://facebook.com/' target="blank")
+                                    i.bi.bi-facebook
+                                a(href='https://instagram.com/' target="blank")
+                                    i.bi.bi-instagram
+                                a(href='https://linkedin.com/' target="blank")
+                                    i.bi.bi-linkedin
+                        .member-info.text-center
+                            h4 Sarah Jhonson
+                            span Product Manager
+                            p
+                                | Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut
+                    .col-lg-4.col-md-6.member(data-aos='fade-up' data-aos-delay='300')
+                        .member-img
+                            img.img-fluid(src='../img/team-3.jpg' alt='')
+                            .social
+                                a(href='https://twitter.com/' target="blank")
+                                    i.bi.bi-twitter
+                                a(href='https://facebook.com/' target="blank")
+                                    i.bi.bi-facebook
+                                a(href='https://instagram.com/' target="blank")
+                                    i.bi.bi-instagram
+                                a(href='https://linkedin.com/' target="blank")
+                                    i.bi.bi-linkedin
+                        .member-info.text-center
+                            h4 William Anderson
+                            span CTO
+                            p
+                                | Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui
+                    .col-lg-4.col-md-6.member(data-aos='fade-up' data-aos-delay='400')
+                        .member-img
+                            img.img-fluid(src='../img/team-4.jpg' alt='')
+                            .social
+                                a(href='https://twitter.com/' target="blank")
+                                    i.bi.bi-twitter
+                                a(href='https://facebook.com/' target="blank")
+                                    i.bi.bi-facebook
+                                a(href='https://instagram.com/' target="blank")
+                                    i.bi.bi-instagram
+                                a(href='https://linkedin.com/' target="blank")
+                                    i.bi.bi-linkedin
+                        .member-info.text-center
+                            h4 Amanda Jepson
+                            span Accountant
+                            p
+                                | Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur
+                    .col-lg-4.col-md-6.member(data-aos='fade-up' data-aos-delay='500')
+                        .member-img
+                            img.img-fluid(src='../img/team-5.jpg' alt='')
+                            .social
+                                a(href='https://twitter.com/' target="blank")
+                                    i.bi.bi-twitter
+                                a(href='https://facebook.com/' target="blank")
+                                    i.bi.bi-facebook
+                                a(href='https://instagram.com/' target="blank")
+                                    i.bi.bi-instagram
+                                a(href='https://linkedin.com/' target="blank")
+                                    i.bi.bi-linkedin
+                        .member-info.text-center
+                            h4 Brian Doe
+                            span Marketing
+                            p
+                                | Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit
+                    .col-lg-4.col-md-6.member(data-aos='fade-up' data-aos-delay='600')
+                        .member-img
+                            img.img-fluid(src='../img/team-6.jpg' alt='')
+                            .social
+                                a(href='https://twitter.com/' target="blank")
+                                    i.bi.bi-twitter
+                                a(href='https://facebook.com/' target="blank")
+                                    i.bi.bi-facebook
+                                a(href='https://instagram.com/' target="blank")
+                                    i.bi.bi-instagram
+                                a(href='https://linkedin.com/' target="blank")
+                                    i.bi.bi-linkedin
+                        .member-info.text-center
+                            h4 Josepha Palas
+                            span Operation
+                            p
+                                | Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel
+        section.testimonials.section-bg
+            .container(data-aos='fade-up')
+                .section-header
+                    h2 Testimonials
+                    p
+                        | Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti
+                .slides-2.swiper
+                    .swiper-wrapper
+                        .swiper-slide
+                            .testimonial-wrap
+                                .testimonial-item
+                                    img.testimonial-img(src='../img/testimonials-1.jpg' alt='')
+                                    h3 Saul Goodman
+                                    h4 Ceo &amp; Founder
+                                    .stars
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                    p
+                                        i.bi.bi-quote.quote-icon-left
+                                        |                     Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                        i.bi.bi-quote.quote-icon-right
+                        .swiper-slide
+                            .testimonial-wrap
+                                .testimonial-item
+                                    img.testimonial-img(src='../img/testimonials-2.jpg' alt='')
+                                    h3 Sara Wilsson
+                                    h4 Designer
+                                    .stars
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                    p
+                                        i.bi.bi-quote.quote-icon-left
+                                        |                     Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                        i.bi.bi-quote.quote-icon-right
+                        .swiper-slide
+                            .testimonial-wrap
+                                .testimonial-item
+                                    img.testimonial-img(src='../img/testimonials-3.jpg' alt='')
+                                    h3 Jena Karlis
+                                    h4 Store Owner
+                                    .stars
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                    p
+                                        i.bi.bi-quote.quote-icon-left
+                                        |                     Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                        i.bi.bi-quote.quote-icon-right
+                        .swiper-slide
+                            .testimonial-wrap
+                                .testimonial-item
+                                    img.testimonial-img(src='../img/testimonials-4.jpg' alt='')
+                                    h3 Matt Brandon
+                                    h4 Freelancer
+                                    .stars
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                    p
+                                        i.bi.bi-quote.quote-icon-left
+                                        |                     Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                        i.bi.bi-quote.quote-icon-right
+                        .swiper-slide
+                            .testimonial-wrap
+                                .testimonial-item
+                                    img.testimonial-img(src='../img/testimonials-5.jpg' alt='')
+                                    h3 John Larson
+                                    h4 Entrepreneur
+                                    .stars
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                        i.bi.bi-star-fill
+                                    p
+                                        i.bi.bi-quote.quote-icon-left
+                                        |                     Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                                        i.bi.bi-quote.quote-icon-right
+                    .swiper-pagination
+        footer.footer
+            .footer-content.position-relative
+                .container
+                    .row
+                        .col-lg-4.col-md-6
+                            .footer-info
+                                h3 UpConstruction
+                                p
+                                    | A108 Adam Street 
+                                    br
+                                    |                 NY 535022, USA
+                                    br
+                                    br
+                                    strong Phone:
+                                    |  +1 5589 55488 55
+                                    br
+                                    strong Email:
+                                    |  info@example.com
+                                    br
+                                .social-links.d-flex.mt-3
+                                    a.d-flex.align-items-center.justify-content-center(href='https://twitter.com/' target="blank")
+                                        i.bi.bi-twitter
+                                    a.d-flex.align-items-center.justify-content-center(href='https://facebook.com/' target="blank")
+                                        i.bi.bi-facebook
+                                    a.d-flex.align-items-center.justify-content-center(href='https://instagram.com/' target="blank")
+                                        i.bi.bi-instagram
+                                    a.d-flex.align-items-center.justify-content-center(href='https://linkedin.com/' target="blank")
+                                        i.bi.bi-linkedin
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Useful Links
+                            ul
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='about.html') About us
+                                li
+                                    a(href='services.html') Services
+                                li
+                                    a(href='#') Terms of service
+                                li
+                                    a(href='#') Privacy policy
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Our Services
+                            ul
+                                li
+                                    a(href='#') Web Design
+                                li
+                                    a(href='#') Web Development
+                                li
+                                    a(href='#') Product Management
+                                li
+                                    a(href='#') Marketing
+                                li
+                                    a(href='#') Graphic Design
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Hic solutasetp
+                            ul
+                                li
+                                    a(href='#') Molestiae accusamus iure
+                                li
+                                    a(href='#') Excepturi dignissimos
+                                li
+                                    a(href='#') Suscipit distinctio
+                                li
+                                    a(href='#') Dilecta
+                                li
+                                    a(href='#') Sit quas consectetur
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Nobis illum
+                            ul
+                                li
+                                    a(href='#') Ipsam
+                                li
+                                    a(href='#') Laudantium dolorum
+                                li
+                                    a(href='#') Dinera
+                                li
+                                    a(href='#') Trodelas
+                                li
+                                    a(href='#') Flexo
+            .footer-legal.text-center.position-relative
+                .container
+                    .copyright
+                        | &copy; Copyright 
+                        strong
+                            span UpConstruction
+                        | . All Rights Reserved
+                    .credits
+                        | Designed by 
+                        a(href='https://t.me/Amalbek009') Amalbek
+
+
+
+        a(href="#" class="back-to-top")
+            i.fa-solid.fa-arrow-up
+        script(src="../js/home.js")
+        script(src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous")
+        script(src="https://code.jquery.com/jquery-1.11.0.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js")
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        script.
+            new PureCounter({
+                selector: ".purecounter",
+            });
+
+            AOS.init();
+            var telegram_bot_id = "6213010812:AAF7nknlBoP3HIr5ddTphXmzySeYQAleW2o"; // token'ni o'rniga Siz yaratgan Bot tokenini yozing
+            //chat id
+            var chat_id = 1669981432; // 1111'ni o'rniga habar borishi kerak bo'lgan joyni ID'sini yozing (Batafsil videoda)
+            var u_name, email, message;
+            var ready = function() {
+                u_name = document.getElementById("name").value;
+                email = document.getElementById("email").value;
+                tel = document.getElementById("phone").value;
+                message = document.getElementById("message").value;
+                message = "Name:  " + u_name + "\nEmail:  " + email + "\nTel:  " + tel + "\nMessage:  " + message;
+            };
+            var sendtelegram = function() {
+                ready();
+                var settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+                    "method": "POST",
+                    "headers": {
+                        "Content-Type": "application/json",
+                        "cache-control": "no-cache"
+                    },
+                    "data": JSON.stringify({
+                        "chat_id": chat_id,
+                        "text": message
+                    })
+                };
+                $.ajax(settings).done(function(response) {
+                    console.log(response);
+                });
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("message").value = "";
+                return false;
+            };
+            new Swiper('.slides-1', {
+                speed: 600,
+                loop: true,
+                autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+                },
+                slidesPerView: 'auto',
+                pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+                },
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                }
+            });
+            new Swiper('.slides-2', {
+                speed: 600,
+                loop: true,
+                autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+                },
+                slidesPerView: 'auto',
+                pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+                },
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+                }
+            });

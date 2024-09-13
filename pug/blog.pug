@@ -1,0 +1,622 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" rel="stylesheet")
+        link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous")
+        link(rel="stylesheet" href="../css/home.css")
+        title Nike Jordan
+    body
+        header.header
+            .container
+                .row
+                    .col-6
+                        .header__logo 
+                            a(href="home.html") 
+                                h1 UpConstruction
+                                span .
+                    .col-6.set(style="flex-direction: column; display: flex; justify-content: space-evenly;")
+                        .header__menu 
+                            ul 
+                                li 
+                                    a(href="home.html") HOME
+                                li 
+                                    a(href="about.html") ABOUT 
+                                li 
+                                    a(href="services.html") SERVICES
+                                li 
+                                    a(href="projects.html") PROJECTS
+                                li 
+                                    a(href="blog.html" class="active") BLOG
+                                li 
+                                    a(href="#") DROPDOWN
+                                li 
+                                    a(href="contact.html") CONTACT
+                        .header__btn 
+                            .bars
+                                i.fa-solid.fa-bars(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasRight' aria-controls='offcanvasRight')
+                            #offcanvasRight.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasRightLabel')
+                                .offcanvas-header
+                                    h5#offcanvasRightLabel.offcanvas-title 
+                                    i.fa-solid.fa-xmark(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+                                .offcanvas-body
+                                    ul 
+                                        li 
+                                            a(href="home.html") HOME
+                                        li 
+                                            a(href="about.html") ABOUT 
+                                        li 
+                                            a(href="services.html") SERVICES
+                                        li 
+                                            a(href="projects.html") PROJECTS
+                                        li 
+                                            a(href="blog.html" class="active") BLOG
+                                        li 
+                                            a(href="#") DROPDOWN
+                                        li 
+                                            a(href="contact.html") CONTACT
+        section.home.d-flex.align-items-center(style="background-image: url('../img/home-bg.jpg');")
+            .container.position-relative.d-flex.flex-column.align-items-center(data-aos='fade')
+                h2 Blog
+                ol
+                    li
+                        a(href='home.html') Home
+                    li Blog
+        section.recent-blog-posts
+            .container(data-aos='fade-up')
+                #pills-tabContent.tab-content
+                    #pills-1.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-1-tab' tabindex='0') 
+                        .row.gy-5
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='100')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-1.jpg' alt='')
+                                        span.post-date December 12
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Eum ad dolor et. Autem aut fugiat debitis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Julia Parker
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Politics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='200')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-2.jpg' alt='')
+                                        span.post-date July 17
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Et repellendus molestiae qui est sed omnis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Mario Douglas
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Sports
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6
+                                .post-item.position-relative.h-100(data-aos='fade-up' data-aos-delay='300')
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-3.jpg' alt='')
+                                        span.post-date September 05
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Quia assumenda est et veritati tirana ploder
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Lisa Hunter
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Economics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                        .row.gy-5(style="margin-top: -20px;")
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='100')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-4.jpg' alt='')
+                                        span.post-date December 12
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Eum ad dolor et. Autem aut fugiat debitis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Julia Parker
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Politics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='200')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-5.jpg' alt='')
+                                        span.post-date July 17
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Et repellendus molestiae qui est sed omnis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Mario Douglas
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Sports
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6
+                                .post-item.position-relative.h-100(data-aos='fade-up' data-aos-delay='300')
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-6.jpg' alt='')
+                                        span.post-date September 05
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Quia assumenda est et veritati tirana ploder
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Lisa Hunter
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Economics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                    #pills-2.tab-pane.fade(role='tabpanel' aria-labelledby='pills-2-tab' tabindex='0')
+                        .row.gy-5
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='100')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-6.jpg' alt='')
+                                        span.post-date December 12
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Eum ad dolor et. Autem aut fugiat debitis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Julia Parker
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Politics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='200')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-5.jpg' alt='')
+                                        span.post-date July 17
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Et repellendus molestiae qui est sed omnis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Mario Douglas
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Sports
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6
+                                .post-item.position-relative.h-100(data-aos='fade-up' data-aos-delay='300')
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-2.jpg' alt='')
+                                        span.post-date September 05
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Quia assumenda est et veritati tirana ploder
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Lisa Hunter
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Economics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                        .row.gy-5(style="margin-top: -20px;")
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='100')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-1.jpg' alt='')
+                                        span.post-date December 12
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Eum ad dolor et. Autem aut fugiat debitis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Julia Parker
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Politics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='200')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-4.jpg' alt='')
+                                        span.post-date July 17
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Et repellendus molestiae qui est sed omnis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Mario Douglas
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Sports
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6
+                                .post-item.position-relative.h-100(data-aos='fade-up' data-aos-delay='300')
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-3.jpg' alt='')
+                                        span.post-date September 05
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Quia assumenda est et veritati tirana ploder
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Lisa Hunter
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Economics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                    #pills-3.tab-pane.fade(role='tabpanel' aria-labelledby='pills-3-tab' tabindex='0')
+                        .row.gy-5
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='100')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-5.jpg' alt='')
+                                        span.post-date December 12
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Eum ad dolor et. Autem aut fugiat debitis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Julia Parker
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Politics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='200')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-1.jpg' alt='')
+                                        span.post-date July 17
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Et repellendus molestiae qui est sed omnis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Mario Douglas
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Sports
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6
+                                .post-item.position-relative.h-100(data-aos='fade-up' data-aos-delay='300')
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-2.jpg' alt='')
+                                        span.post-date September 05
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Quia assumenda est et veritati tirana ploder
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Lisa Hunter
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Economics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                        .row.gy-5(style="margin-top: -20px;")
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='100')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-4.jpg' alt='')
+                                        span.post-date December 12
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Eum ad dolor et. Autem aut fugiat debitis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Julia Parker
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Politics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6(data-aos='fade-up' data-aos-delay='200')
+                                .post-item.position-relative.h-100
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-6.jpg' alt='')
+                                        span.post-date July 17
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Et repellendus molestiae qui est sed omnis
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Mario Douglas
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Sports
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                            .col-xl-4.col-md-6
+                                .post-item.position-relative.h-100(data-aos='fade-up' data-aos-delay='300')
+                                    .post-img.position-relative.overflow-hidden
+                                        img.img-fluid(src='../img/blog-3.jpg' alt='')
+                                        span.post-date September 05
+                                    .post-content.d-flex.flex-column
+                                        h3.post-title Quia assumenda est et veritati tirana ploder
+                                        .meta.d-flex.align-items-center
+                                            .d-flex.align-items-center
+                                                i.bi.bi-person
+                                                span.ps-2 Lisa Hunter
+                                            span.px-3.text-black-50 /
+                                            .d-flex.align-items-center
+                                                i.bi.bi-folder2
+                                                span.ps-2 Economics
+                                        hr
+                                        a.readmore.stretched-link(href='blog-details.html')
+                                            span Read More
+                                            i.bi.bi-arrow-right
+                ul#pills-tab.nav.nav-pills.mb-3(role='tablist').justify-content-center
+                    li.nav-item(role='presentation')
+                        button#pills-1-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#pills-1' type='button' role='tab' aria-controls='pills-1' aria-selected='true') 1
+                    li.nav-item(role='presentation')
+                        button#pills-2-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-2' type='button' role='tab' aria-controls='pills-2' aria-selected='false') 2
+                    li.nav-item(role='presentation')
+                        button#pills-3-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-3' type='button' role='tab' aria-controls='pills-3' aria-selected='false') 3
+        footer.footer
+            .footer-content.position-relative
+                .container
+                    .row
+                        .col-lg-4.col-md-6
+                            .footer-info
+                                h3 UpConstruction
+                                p
+                                    | A108 Adam Street 
+                                    br
+                                    |                 NY 535022, USA
+                                    br
+                                    br
+                                    strong Phone:
+                                    |  +1 5589 55488 55
+                                    br
+                                    strong Email:
+                                    |  info@example.com
+                                    br
+                                .social-links.d-flex.mt-3
+                                    a.d-flex.align-items-center.justify-content-center(href='https://twitter.com/' target="blank")
+                                        i.bi.bi-twitter
+                                    a.d-flex.align-items-center.justify-content-center(href='https://facebook.com/' target="blank")
+                                        i.bi.bi-facebook
+                                    a.d-flex.align-items-center.justify-content-center(href='https://instagram.com/' target="blank")
+                                        i.bi.bi-instagram
+                                    a.d-flex.align-items-center.justify-content-center(href='https://linkedin.com/' target="blank")
+                                        i.bi.bi-linkedin
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Useful Links
+                            ul
+                                li
+                                    a(href='home.html') Home
+                                li
+                                    a(href='about.html') About us
+                                li
+                                    a(href='services.html') Services
+                                li
+                                    a(href='#') Terms of service
+                                li
+                                    a(href='#') Privacy policy
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Our Services
+                            ul
+                                li
+                                    a(href='#') Web Design
+                                li
+                                    a(href='#') Web Development
+                                li
+                                    a(href='#') Product Management
+                                li
+                                    a(href='#') Marketing
+                                li
+                                    a(href='#') Graphic Design
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Hic solutasetp
+                            ul
+                                li
+                                    a(href='#') Molestiae accusamus iure
+                                li
+                                    a(href='#') Excepturi dignissimos
+                                li
+                                    a(href='#') Suscipit distinctio
+                                li
+                                    a(href='#') Dilecta
+                                li
+                                    a(href='#') Sit quas consectetur
+                        .col-lg-2.col-md-3.footer-links
+                            h4 Nobis illum
+                            ul
+                                li
+                                    a(href='#') Ipsam
+                                li
+                                    a(href='#') Laudantium dolorum
+                                li
+                                    a(href='#') Dinera
+                                li
+                                    a(href='#') Trodelas
+                                li
+                                    a(href='#') Flexo
+            .footer-legal.text-center.position-relative
+                .container
+                    .copyright
+                        | &copy; Copyright 
+                        strong
+                            span UpConstruction
+                        | . All Rights Reserved
+                    .credits
+                        | Designed by 
+                        a(href='https://t.me/Amalbek009') Amalbek
+
+        a(href="#" class="back-to-top")
+            i.fa-solid.fa-arrow-up
+        script(src="../js/home.js")
+        script(src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous")
+        script(src="https://code.jquery.com/jquery-1.11.0.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js")
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        script.
+            new PureCounter({
+                selector: ".purecounter",
+            });
+
+            AOS.init();
+            var telegram_bot_id = "6213010812:AAF7nknlBoP3HIr5ddTphXmzySeYQAleW2o"; // token'ni o'rniga Siz yaratgan Bot tokenini yozing
+            //chat id
+            var chat_id = 1669981432; // 1111'ni o'rniga habar borishi kerak bo'lgan joyni ID'sini yozing (Batafsil videoda)
+            var u_name, email, message;
+            var ready = function() {
+                u_name = document.getElementById("name").value;
+                email = document.getElementById("email").value;
+                tel = document.getElementById("phone").value;
+                message = document.getElementById("message").value;
+                message = "Name:  " + u_name + "\nEmail:  " + email + "\nTel:  " + tel + "\nMessage:  " + message;
+            };
+            var sendtelegram = function() {
+                ready();
+                var settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+                    "method": "POST",
+                    "headers": {
+                        "Content-Type": "application/json",
+                        "cache-control": "no-cache"
+                    },
+                    "data": JSON.stringify({
+                        "chat_id": chat_id,
+                        "text": message
+                    })
+                };
+                $.ajax(settings).done(function(response) {
+                    console.log(response);
+                });
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("message").value = "";
+                return false;
+            };
+            new Swiper('.slides-1', {
+                speed: 600,
+                loop: true,
+                autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+                },
+                slidesPerView: 'auto',
+                pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+                },
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                }
+            });
+            new Swiper('.slides-2', {
+                speed: 600,
+                loop: true,
+                autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+                },
+                slidesPerView: 'auto',
+                pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+                },
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+                }
+            });
